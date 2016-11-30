@@ -1,0 +1,1030 @@
+/* ==========================================================================
+  WELCOME TO DARK BLUE
+   ========================================================================== */
+
+html, button, input, select, textarea {color: #222}
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {overflow-x:hidden;}
+html {font-size: 1em; line-height: 1.4;}
+html, body {margin:0;padding:0;font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif}
+.clearfix:before,.clearfix:after {content: " "; /* 1 */display: table; /* 2 */}
+.clearfix:after {clear: both;}
+/* For IE 6/7 only - Include this rule to trigger hasLayout and contain floats. */
+.clearfix {*zoom: 1;}
+/* Remove the gap between images, videos, audio and canvas and the bottom of their containers: h5bp.com/i/440 */
+audio, canvas, img, video {vertical-align: middle;}
+/* Remove default fieldset styles */
+fieldset {border: 0; margin: 0; padding: 0;}
+ul {list-style:none}
+/* Allow only vertical resizing of textareas. */
+textarea {resize: vertical;}
+ul, li, p, h1, h2, h3, h4, h5, h6 {padding:0; margin:0; font-weight:normal}
+a {text-decoration:none}
+img {max-width:100%}
+a img {border:none}
+*, *:after, *:before {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.overflow-hidden {overflow: hidden;}
+blockquote {margin: 0; padding: 0;}
+* html body { margin-top: 0px !important; } 
+
+
+
+/* ==========================================================================
+   Backgrounds
+   ========================================================================== */
+
+
+.container-bg {
+	 height:100%;
+	 height:vh100;
+	 width:100%;
+	 position:fixed;
+}
+
+.overview-bg {
+	background:url(../images/bg-overview.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.allgemein-bg {
+	background:url(../images/bg-allgemein.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.action-bg {
+	background:url(../images/bg-action.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.landschaft-bg {
+	background:url(../images/bg-landschaft.jpg) no-repeat left bottom fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.lifestyle-bg {
+	background:url(../images/bg-lifestyle.jpg) no-repeat bottom left fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.wildlife-bg {
+	background:url(../images/bg-wildlife.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.angebote-bg {
+	background:url(../images/bg-angebote.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.fluge-bg {
+	background:url(../images/bg-fluge.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+/* ==========================================================================
+   Global Elements
+   ========================================================================== */
+
+
+h2 {
+	font-size:1.6rem;
+	font-weight:600;
+	margin-bottom: 15px;
+	color: #fff;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+	font-size:1.3rem;
+	font-weight:600
+}
+
+h4 {
+	font-size:0.8rem;
+	font-weight:600;
+	text-transform:uppercase;
+	letter-spacing:0.5px
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.7;
+	font-weight: 400;
+	margin-bottom:48px
+}
+
+p a {
+	font-weight: 600;
+	color: #222;
+}
+
+ul {
+	list-style:none
+}
+
+.cta-find-out-more {
+	margin-top:16px;
+}
+
+
+/* ==========================================================================
+   Global Elememnts
+   ========================================================================== */
+
+header {
+	background-color: rgba(0,0,0,0.6);
+	position:absolute;
+	z-index:999;
+	width:100%;
+}
+
+.se-header {
+	margin: auto;
+	padding: 33px 40px 30px;
+	position:relative;
+}
+
+.se-logo {
+	width: 154px;
+	margin: 0 35px 0px 0;
+	float: left;
+}
+
+.client-logo {
+	position:absolute;
+	top: 21px;
+	right: 40px;
+	width: 106px;
+}
+
+.core-site-nav li {
+	float: left;
+	margin-right: 20px;
+}
+
+.core-site-nav li a {
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 0.8px;
+	font-weight: 400;
+}
+
+.page-head {
+	margin: 15vh 0;
+	/* top: 447px; */
+	width: 100%;
+	text-align: center;
+	/* text-shadow: 0px 0px 30px rgba(0, 0, 0, 1); */
+}
+
+.video-wrap { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%;
+} 
+
+.video-wrap iframe, 
+.video-wrap object, 
+.video-wrap embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
+}
+
+.full-width-img {
+	margin-bottom: 42px
+}
+
+audio, canvas, video {
+    vertical-align: middle;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    /* top: 70px; */
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -100;
+}
+
+
+/* ==========================================================================
+   Fixed Page Elements
+   ========================================================================== */
+
+#wrapper {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #000;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.top-logo {
+	position:absolute;
+	top:30px;
+	left: 2%
+}
+
+.top-logo img {
+	width:160px
+}
+
+.content-logo {
+	display: none;
+	position:relative;
+	margin-bottom: 120px;}
+
+.content-logo img {
+	width:160px
+}
+
+.partnership {
+	position:absolute;
+	bottom:40px;
+	right: 3%
+;
+	background-color: #000;
+	padding: 20px;
+}
+
+.partnership p {
+	font-size:0.8rem;
+	font-weight:400;
+	font-style:normal;
+	color:#fff;
+	margin-bottom: 5px;}
+
+.partnership img {
+	width: 130px;}
+
+
+/*============ Navigation ============*/
+
+
+.nav {
+	position:absolute;
+	bottom: 10px;
+	left: 4%;
+	color:#fff;
+	z-index: 999;
+}
+
+.nav ul {
+	margin-bottom:30px
+}
+
+.nav li {
+	text-transform:uppercase;
+	font-size:0.8em;
+	letter-spacing:1.6px;
+	font-weight:300;
+	border-bottom:1px solid rgba(255,255,255,0.3);
+}
+
+.nav li a {
+	color:#fff;
+	transition:color ease 0.2s;
+	font-weight: 600;
+	font-size: 0.7rem;
+	padding: 10px 0;
+	display:block;
+}
+
+.nav-overview a:hover {color:#aaa}
+.nav-allgemein a:hover {color:#008c3a}
+.nav-action a:hover {color:#ffcc00}
+.nav-wildlife a:hover {color:#e3000f}
+.nav-landschaft a:hover {color:#396ac6}
+.nav-lifestyle a:hover {color:#008c3a}
+.nav-angebote a:hover {color:#ffcc00}
+.nav-fluge a:hover {color:#e3000f}
+
+
+.selected-button {
+	width: 7px;
+	height: 7px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	position:absolute;
+	left:-16px;
+}
+
+.selected-button-overview {background-color:#fff;top: 15px}
+.selected-button-allgemein {background-color:#008c3a;top: 51px}
+.selected-button-action {background-color:#ffcc00; top:87px}
+.selected-button-wildlife {background-color:#008c3a; top:123px}
+.selected-button-landschaft {background-color:#e3000f; top:159px}
+.selected-button-lifestyle {background-color:#396ac6; top:195px}
+.selected-button-angebote {background-color:#ffcc00; top:231px}
+.selected-button-fluge {background-color:#e3000f; top:267px}
+
+
+/*============ Mobile Navigation ============*/
+
+
+#mobile-nav {
+  display:none;
+  float: right;
+
+}
+
+#mobile-nav #menu {
+  display:none;
+  background-color: #1F1F1F;
+  width:100%;
+  padding: 20px 0;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  top:0;
+  height: 100vh;
+}
+
+#mobile-nav a {
+  color:#A5A5A5 !important
+}
+
+#mobile-nav a:hover {
+  color:#fff !important
+}
+
+#mobile-nav a#pull:after {  
+        content:"";   
+        width: 30px;  
+        height: 30px;  
+        display: inline-block;  
+        position: absolute;  
+        right: 15px;  
+        top: 10px;  
+    } 
+
+#mobile-nav #menu-open img {
+  width:20px; 
+}
+
+#mobile-nav #menu-close img {
+  width:22px; 
+  height:22px;
+  /* margin: 25px 0%; */}
+
+#mobile-nav ul {
+  	padding-top: 13px;
+	border-bottom: 1px solid #2A2A2A;
+	padding-bottom: 30px;
+	margin-bottom: 10px
+}
+
+#mobile-nav li {
+  width: 80%;
+  display: inline-block;
+  padding: 0 10%;
+}
+
+#mobile-nav li a {
+  display:block;
+  padding: 6px 0;
+}
+
+.mobile-partnership {
+	padding:10px 0 5px 10%;
+}
+
+.mobile-partnership p  {
+	font-size: 0.85rem;
+	color: #777;
+	margin-bottom:5px
+}
+
+.mobile-partnership img {
+	opacity:0.2;
+	width:160px
+}
+
+#menu-close {
+  text-align: right;
+  position: absolute;
+  top: 35px;
+  right: 10%;
+  z-index: 0;
+}
+
+.mobile-menu-button {
+	width: 100%;
+	padding: 35px 10% 0;
+	text-align:right;
+}
+
+.footer-nav {
+	position:relative;
+	color:#fff;
+	display: none;
+	background-color: #1F1F1F;
+  	width:100%;
+	padding-bottom: 30px;
+}
+
+.footer-nav li a {
+	color: #A5A5A3;
+	display:block;
+  	padding: 11px 0;
+}
+
+.footer-nav ul {
+	width: 80%;
+ 	
+	padding: 30px 10%;
+}
+
+.footer-nav li {
+  border-bottom: 1px solid #2A2A2A;
+}
+
+
+/*============ Main Content Block ============*/
+
+
+.main {
+	position:absolute;
+	width: 60%;
+	margin: 20vh 20% 0 20%;
+	z-index: 500;
+}
+
+#page-content {
+	background-color: rgba(250, 250, 250, 1);
+	padding: 60px;
+	margin-bottom: 60px;
+}
+
+#page-content h2 {
+	color:#222;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 2.5rem;
+	margin-top: -10px;
+}
+
+
+#page-content ul {
+	margin-top:40px
+}
+
+#page-content .img-wrapper {
+	background-color: #fff;
+	margin-bottom: 15px
+}
+
+#page-content ul h4 {
+	margin-bottom:12px
+}
+
+#page-content ul p {
+	font-size:0.9rem
+}
+
+#page-content p a {
+	padding-bottom: 2px;
+	border-bottom:1px solid #666;
+	border-bottom:1px solid rgba(100, 100, 100, 0);
+	transition: all ease 0.5s;
+	
+}
+
+#page-content p a:hover {
+	border-bottom:1px solid #666;
+	border-bottom:1px solid rgba(100, 100, 100, 1);
+}
+
+
+#page-content li {
+	float:left;
+	width:47.5%;
+	margin-bottom:44px;
+	position:relative
+}
+
+#page-content li img {
+	transition: opacity ease 0.5s;
+	opacity:1
+}
+
+#page-content li img:hover {
+	opacity:0.7
+}
+
+#page-content li span {
+	position:absolute;
+	top:-5px;
+	left:-5px;
+	padding:5px 8px;
+	font-weight:600;
+	font-size:0.8rem
+;
+	z-index: 100;
+}
+
+#page-content .left-list {
+	margin-right:5%
+}
+
+.offers-cta {
+	background:#161616;
+	background:rgba(22,22,22,0.8);
+	text-align:center;
+	xpadding:40px 20px;
+	transition:all ease 0.3s;
+	margin-bottom:40px
+}
+
+.offers-cta:hover {
+	background:rgba(22,22,22,0.95);
+}
+
+.offers-cta a {
+	display:block;
+	color:#fff;
+}
+
+.offers-cta img {
+	margin-top:40px;
+	margin-bottom: 15px;
+	width: 200px;
+}
+
+.offers-cta a h3 {
+	font-size:1.1rem;
+	font-weight:300
+}
+
+.offers-cta a h3.cta-highlight {
+	margin-bottom:40px;
+	color:#ff8c00;
+	display: inline-block;
+}
+
+#page-content h3 {
+	margin-bottom:10px;
+	color:#121212
+}
+
+#page-content .overview-thumb h3 {
+	color:#fff;
+	margin-bottom:0px
+}
+
+.page-thumb p {
+	font-size:0.8rem;
+	color:#121212;
+	margin-bottom: 14px;
+}
+
+.page-thumb-img {
+	margin-bottom:20px
+}
+
+
+
+/*============ Overview Styles ============*/
+
+
+.page-head h1 {
+	color:#fff;
+	text-transform:uppercase;
+	font-size:6em;
+	font-weight:600;
+	line-height:0.9;
+	margin-bottom:20px;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page-head  h1 span {
+	display:block;
+	font-weight:200;
+	font-style:italic;
+	font-size:3rem;
+}
+
+.page-head p {
+	color:#fff;
+	margin-bottom: 40px;}
+
+#overview li {
+	float:left;
+	width:47.5%;
+	margin-bottom:44px
+}
+
+.overview-thumbs,
+.page-thumbs {
+	margin:60px 0 -30px 0
+}
+
+.overview-thumb,
+.page-thumb {
+	width:47.5%;
+	float:left;
+	position:relative;
+	margin-bottom:30px
+}
+
+
+.overview-thumb h3 {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	color:#fff;
+	background-color:#ffcc00;
+	padding:10px 15px;
+	text-transform:uppercase;
+	font-size:0.8rem;
+	letter-spacing:1.5px;
+	z-index: 9999;
+}
+
+.overview-thumb-2 h3 {background-color:#008c3a;}
+.overview-thumb-3 h3 {background-color:#e3000f;}
+.overview-thumb-4 h3 {background-color:#396ac6;}
+.overview-thumb-6 h3 {background-color:#008c3a;}
+
+
+
+#overview #page-content h2 {
+	text-transform:none;
+	font-size:2em;
+	letter-spacing:-0.5px;
+	line-height:1.2
+}
+
+#page-content-overview {
+	margin-top:-50px;
+}
+
+#page-content-overview p {
+	color:#fff;
+	text-align:center;
+	padding:0 48px;
+	padding-bottom:20px
+}
+
+
+/*============ Lifestyle Styles ============*/
+
+
+#lifestyle #page-content {border-top:10px solid #ffcc00}
+#lifestyle li span {background:#ffcc00}
+
+#fashion #page-content {border-top:10px solid #008c3a}
+#fashion li span {background:#008c3a; color: #fff}
+
+#music #page-content {border-top:10px solid #e3000f}
+#music li span {background:#e3000f;  color: #fff}
+
+#nature #page-content {border-top:10px solid #396ac6}
+#nature li span {background:#396ac6; color: #fff}
+
+#food #page-content {border-top:10px solid #ffcc00}
+#food li span {background:#ffcc00}
+
+
+/* Offers */
+
+.content-cta {
+    text-align:center;
+    margin:auto
+}
+
+.offers {
+    width: 100%;
+    margin: 90px auto;
+    background-image: url(../images/pattern-lightbg.png);
+    background-size: 150px;
+    text-align: center;
+}
+
+.se-offer {
+    width: 46%;
+    background-color: #fff;
+    float:left;
+    text-align:left;
+}
+
+.se-offer-right {
+    margin-left:5%
+}
+
+
+
+@media (max-width:860px) {
+    
+    .se-offer {
+        width: 100%;
+        background-color: #fff;
+        float:left;
+        margin:0 0 40px 0;
+        text-align:left;
+    }
+}
+
+.se-offer-img,
+.overview-thumb-img,
+.page-thumb-img {
+    overflow:hidden;
+}
+
+.se-offer-img img,
+.overview-thumb-img img,
+.page-thumb-img img {
+    transform: scale(1);
+    transition: all ease-in-out 0.3s;
+}
+    .se-offer:hover .se-offer-img img,
+    .overview-thumb:hover .overview-thumb-img img,
+    .page-thumb:hover .page-thumb-img img {
+        transform: scale(1.1); 
+    }
+
+.se-offer-copy {
+    padding: 30px 30px 10px;
+    text-align: left;
+}
+
+.se-offer h3 {
+    font-size:1.3rem;
+    color:#121212;
+    margin-bottom:5px
+}
+
+.se-offer p {
+    margin-bottom:0;
+    font-size: 0.8rem;
+    color:#121212
+}
+
+p.se-offer-location {
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:0.8rem;
+    margin-bottom: 18px;
+}
+
+.se-offer-price {
+    padding:0 30px 30px
+}
+
+.se-offer-price p {
+    font-weight:600;
+    letter-spacing:0;
+    margin:8px 0 18px;
+    font-size: 0.8rem;
+}
+
+.was-price {
+    text-decoration:line-through;
+    color:#999
+}
+
+.offer-btn {
+    background-color:#008e3f;
+    border-radius: 2px;
+    padding:12px 30px;
+    font-size: 0.8rem;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#fff;
+    border:1px solid #fff;
+    transition:all ease 0.3s;
+    text-align:center
+}
+
+.se-offer:hover .offer-btn {
+    background-color:#0a4926 ;
+}
+
+#flight-logo {
+	position:absolute;
+	right:40px;
+	z-index:99999;
+	width:150px;
+	bottom: 40px;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+
+@media only screen and (max-width: 1130px) {
+
+
+	.nav {
+		position:absolute;
+		bottom: 95px;
+		color:#fff;
+	}
+
+	.main {
+		width: 70%;
+		margin: 55vh 8% 0 22%;
+	}
+
+	#overview {
+		margin: 40vh 8% 0 22%;
+	}
+
+}
+
+@media only screen and (max-width: 1080px) {
+	.se-header {
+		display:none
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.overview-bg, .allgemein-bg, .action-bg, .wildlife-bg, .landschaft-bg, .lifestyle-bg, .angebote-bg, .fluge-bg  {
+		background-attachment: scroll;
+	}
+
+	.container-bg video {
+		display:none
+	}
+
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+
+	.nav, .partnership, .top-logo  {
+		display:none;
+	}
+
+	#mobile-nav  {
+		display:block;
+		position: absolute;
+		width: 100%;
+		z-index: 900;
+	}
+
+	.content-logo {
+		display:block
+	}
+
+	.main, #overview {
+		position:relative;
+		width: 80%;
+		margin: 0 10%;
+		padding-top: 300px;
+		z-index: 500;
+	}
+
+	#overview {
+		padding-top: 30px;
+	}
+
+	.footer-nav {
+		display: block
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+
+	.page-head h1 {
+		font-size:3.3rem;
+		font-weight:600;
+		line-height:0.9;
+		margin-bottom:20px
+	}
+
+	.page-head  h1 span {
+		font-weight:200;
+		font-size:2rem;
+	}
+
+	#overview #page-content, #page-content {
+		padding: 50px;
+	}
+
+	#overview #page-content h2 ,#page-content h2 {
+		font-size: 1.4em;
+		line-height:1.2
+	}
+
+	#page-content p {
+		font-size: 1em;
+	}
+
+	.page-offers h2 {
+		font-size: 1.4em;
+		line-height:1.2;
+		margin-bottom:30px
+	}
+
+
+}
+
+@media only screen and (max-width: 880px) {
+	.overview-thumb,
+	.page-thumb {
+		width:100%;
+	}
+
+	.se-offer-right {
+		margin-left:0px
+	}
+}
+
+
+
+@media only screen and (max-width: 640px) {
+
+	#overview li, #page-content li, .page-offers li {
+		float: left;
+		width: 100%;
+		margin-bottom: 44px;
+	}
+
+	#overview #page-content, #page-content {
+		padding: 30px;
+	}
+	
+	.overview-bg {
+		background-position: -30px center
+	}
+
+	.lifestyle-bg {
+		background-position: -172px center
+	}
+
+	.fashion-bg {
+		background-position: -320px center
+	}
+
+	.music-bg {
+		background-position: -372px center
+	}
+
+	.nature-bg {
+		background-position: -218px center
+	}
+
+	.food-bg {
+		background-position: -118px center
+	}
+
+	.offers-bg {
+		background-position: -320px center
+	}
+
+}
+
+
+
+
