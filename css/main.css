@@ -1026,5 +1026,17 @@ p.se-offer-location {
 }
 
 
+/* ==========================================================================
+   LIVE EDITS
+   ========================================================================== */
 
+a.title-link {
+  color: inherit;
+}
 
+a.title-link:hover,
+a.title-link:active,
+a.title-link:focus {
+  color: inherit;
+  text-decoration: underline;
+}
